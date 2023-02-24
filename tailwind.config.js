@@ -20,6 +20,7 @@ module.exports = {
       background: '#000212',
       white: '#FFFFFF',
       'white-a08': 'rgba(255, 255, 255, 0.08)',
+      grey: 'rgb(138, 143, 152)',
     },
     spacing: {
       0: '0',
@@ -40,6 +41,9 @@ module.exports = {
       'primary-gradient':
         'linear-gradient(92.88deg,#455eb5 9.16%,#5643cc 43.89%,#673fd7 64.72%)',
     },
+    boxShadow: {
+      primary: 'rgb(80 63 205 / 50%) 0px 1px 40px'
+    }
   },
   plugins: [],
 };
