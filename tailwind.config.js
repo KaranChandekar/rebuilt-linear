@@ -17,10 +17,14 @@ module.exports = {
       '5xl': ['8rem', 1],
     },
     colors: {
+      transparent: 'transparent',
+      white: '#fff',
+      'off-white': '#f7f8f8',
+      'transparent-white': 'rgba(255, 255, 255, 0.08)',
       background: '#000212',
-      white: '#FFFFFF',
-      'white-a08': 'rgba(255, 255, 255, 0.08)',
-      grey: 'rgb(138, 143, 152)',
+      grey: '#858699',
+      'grey-dark': '#222326',
+      'primary-text': '#b4bcd0',
     },
     spacing: {
       0: '0',
@@ -36,14 +40,15 @@ module.exports = {
       10: '4rem',
       11: '4.4rem',
       12: '4.8rem',
+      'navigation-height': 'var(--navigation-height)',
     },
     backgroundImage: {
       'primary-gradient':
         'linear-gradient(92.88deg,#455eb5 9.16%,#5643cc 43.89%,#673fd7 64.72%)',
     },
     boxShadow: {
-      primary: 'rgb(80 63 205 / 50%) 0px 1px 40px'
-    }
+      primary: 'rgb(80 63 205 / 50%) 0px 1px 40px',
+    },
   },
   plugins: [],
 };
