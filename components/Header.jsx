@@ -2,7 +2,7 @@
 
 import classNames from 'classnames';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Button } from './Button';
 import Container from './Container';
 import Hamburger from './icons/Hamburger';
@@ -10,6 +10,22 @@ import Logo from './icons/Logo';
 
 const Header = () => {
   const [hamburgerMenuIsOpen, setHamburgerMenuIsOpen] = useState(false);
+
+  useEffect(() => {
+    const html = document.querySelector('html');
+    if (html) html.classList.toggle('overflow-hidden', hamburgerMenuIsOpen);
+  }, [hamburgerMenuIsOpen]);
+
+  useEffect(() => {
+    const closeHamburgerNavigation = () => setHamburgerMenuIsOpen(false);
+    window.addEventListener('orientationchange', closeHamburgerNavigation);
+    window.addEventListener('resize', closeHamburgerNavigation);
+
+    return () => {
+      window.removeEventListener('orientationchange', closeHamburgerNavigation);
+      window.removeEventListener('resize', closeHamburgerNavigation);
+    };
+  }, [setHamburgerMenuIsOpen]);
 
   return (
     <header className="fixed top-0 left-0 w-full backdrop-blur-[12px] z-10">
