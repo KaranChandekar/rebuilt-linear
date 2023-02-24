@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 w-full backdrop-blur-[12px] z-10">
       <Container className="flex border-b h-navigation-height border-transparent-white">
-        <Link href="/" className="flex items-center text-md">
+        <Link href="/" className="flex items-center mr-2 text-md">
           <Logo className="w-[1.8rem] h-[1.8rem] mr-2" /> Linear
         </Link>
 
@@ -28,7 +28,7 @@ const Header = () => {
         >
           <ul
             className={classNames(
-              'flex h-full flex-col md:flex-row md:items-center [&_li]:mx-8 [&_li]:border-b [&_li]:border-grey-dark md:[&_li]:border-none',
+              'flex h-full flex-col md:flex-row md:items-center [&_li]:mx-4 [&_li]:border-b [&_li]:border-grey-dark md:[&_li]:border-none',
               'ease-in [&_a]:flex [&_a]:h-navigation-height [&_a]:w-full [&_a]:items-center [&_a]:text-lg [&_a]:transition-[color,transform] [&_a]:duration-300 md:[&_a]:text-sm [&_a]:md:transition-colors [&_a:hover]:text-grey',
               hamburgerMenuIsOpen && '[&_a]:translate-y-0'
             )}
