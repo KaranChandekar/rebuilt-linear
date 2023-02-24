@@ -4,7 +4,7 @@ import { cva } from 'class-variance-authority';
 const buttonClasses = cva('rounded-full inline-flex items-center', {
   variants: {
     variant: {
-      primary: 'bg-primary-gradient',
+      primary: 'bg-primary-gradient hover:text-shadow hover:box-shadow-primary',
       secondary: '',
       tertiary: '',
     },
