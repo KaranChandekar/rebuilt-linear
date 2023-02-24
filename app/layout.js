@@ -1,4 +1,5 @@
 import Container from '@/components/Container';
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import './globals.css';
 
@@ -14,9 +15,7 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         <main className="pt-navigation-height">{children}</main>
-        <footer>
-          <Container>footer</Container>
-        </footer>
+        <Footer />
       </body>
     </html>
   );
