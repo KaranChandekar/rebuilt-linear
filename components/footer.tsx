@@ -52,13 +52,19 @@ export const Footer = () => (
     <Container className="flex flex-col justify-between lg:flex-row">
       <div>
         <div className="flex h-full flex-row justify-between lg:flex-col">
-          <div className="flex items-center text-grey">
-            <Logo className="mr-4 h-4 w-4" /> Linear - Designed worldwide
+          <div className="flex cursor-pointer items-center text-grey transition duration-300 hover:text-white">
+            <Logo className="mr-2 h-4 w-4" /> Linear - Designed worldwide
           </div>
-          <div className="mt-auto flex space-x-4 text-grey">
-            <TwitterIcon />
-            <GithubIcon />
-            <SlackIcon />
+          <div className="mt-auto flex space-x-6 text-grey [&_a:hover]:text-white [&_a]:transition [&_a]:duration-300">
+            <Link href="#">
+              <TwitterIcon />
+            </Link>
+            <Link href="#">
+              <GithubIcon />
+            </Link>
+            <Link href="#">
+              <SlackIcon />
+            </Link>
           </div>
         </div>
       </div>
