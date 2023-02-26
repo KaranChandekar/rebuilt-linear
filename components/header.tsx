@@ -29,10 +29,10 @@ export const Header = () => {
   }, [setHamburgerMenuIsOpen]);
 
   return (
-    <header className="fixed top-0 left-0 z-10 w-full border-b border-transparent-white backdrop-blur-[12px]">
-      <Container className="flex h-navigation-height">
+    <header className="fixed top-0 left-0 z-10 w-full backdrop-blur-[12px]">
+      <Container className="flex h-navigation-height border-b border-transparent-white">
         <Link className="flex items-center text-md" href="/">
-          <Logo className="mr-4 h-[1.8rem] w-[1.8rem]" /> Linear
+          <Logo className="mr-2 h-[1.8rem] w-[1.8rem]" /> Linear
         </Link>
 
         <div
@@ -51,9 +51,8 @@ export const Header = () => {
           >
             <ul
               className={classNames(
-                "flex h-full flex-col md:flex-row md:items-center [&_li]:ml-6 [&_li]:border-b [&_li]:border-grey-dark md:[&_li]:border-none",
-                "ease-in [&_a]:flex [&_a]:h-navigation-height [&_a]:w-full [&_a]:translate-y-8 [&_a]:items-center [&_a]:text-lg [&_a]:transition-[color,transform] [&_a]:duration-300 md:[&_a]:translate-y-0 md:[&_a]:text-sm [&_a]:md:transition-colors [&_a:hover]:text-grey",
-                hamburgerMenuIsOpen && "[&_a]:translate-y-0"
+                "flex h-full flex-col md:flex-row md:items-center [&_li]:mx-6 [&_li]:border-b [&_li]:border-grey-dark md:[&_li]:border-none",
+                "ease-in [&_a:hover]:text-grey [&_a]:flex [&_a]:h-navigation-height [&_a]:w-full [&_a]:items-center [&_a]:text-lg [&_a]:transition-[color,transform] [&_a]:duration-300 md:[&_a]:text-sm [&_a]:md:transition-colors"
               )}
             >
               <li>
