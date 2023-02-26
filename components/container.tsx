@@ -8,7 +8,7 @@ export const Container = ({
   className?: string;
 }) => {
   return (
-    <div className={classNames("mx-auto max-w-[120rem] px-8", className)}>
+    <div className={classNames("mx-auto max-w-[120rem] px-6 md:px-8 xl:px-0", className)}>
       {children}
     </div>
   );
